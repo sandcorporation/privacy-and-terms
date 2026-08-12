@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>정책 문서 — sandcorporation</title>
+<meta name="description" content="sandcorporation 이 만든 앱들의 개인정보처리방침과 이용약관.">
+<style>
+  :root {
+    --bg: #fbfaf9; --fg: #1b1c1e; --muted: #5a5a5c; --rule: #dedbd7;
+    --accent: #3d5a80; --card: #f2efec; --card-border: #e2ded9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131416; --fg: #e4e2e0; --muted: #a9a7a4; --rule: #343537;
+      --accent: #a8c4e4; --card: #1d1e21; --card-border: #2c2d2f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic",
+          "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    word-break: keep-all;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 64px 24px 96px; }
+  h1 { font-size: 1.7rem; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-size: 1.05rem; margin: 40px 0 12px; color: var(--muted); font-weight: 600; }
+  a.doc {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--card-border);
+    border-radius: 12px; padding: 18px 20px; margin-bottom: 12px;
+  }
+  a.doc:hover { border-color: var(--accent); }
+  a.doc .t { font-weight: 700; display: block; }
+  a.doc .d { color: var(--muted); font-size: .92rem; display: block; margin-top: 2px; }
+  footer { margin-top: 64px; color: var(--muted); font-size: .875rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>정책 문서</h1>
+  <p class="sub">sandcorporation 이 만든 앱들의 개인정보처리방침과 이용약관입니다.</p>
+
+  <h2>줄기노트</h2>
+  <a class="doc" href="julginote/privacy/">
+    <span class="t">개인정보처리방침</span>
+    <span class="d">개발자 서버가 없고, 기록은 기기 안에만 있습니다</span>
+  </a>
+
+  <footer>
+    <p>이 페이지의 원본은
+    <a href="https://github.com/sandcorporation/privacy-and-terms">GitHub</a> 에 있습니다.</p>
+  </footer>
+</main>
+</body>
+</html>
