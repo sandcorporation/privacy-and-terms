@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sandcorp 계정 개인정보 수집·이용</title>
+<meta name="description" content="Sandcorp 계정이 모으는 개인정보와 그 목적·보유 기간. 로그인에 필요한 정보만 받고, 탈퇴하면 30일 뒤 지웁니다.">
+<style>
+  :root {
+    --bg: #fbfaf9;
+    --fg: #1b1c1e;
+    --muted: #5a5a5c;
+    --rule: #dedbd7;
+    --accent: #3d5a80;
+    --card: #f2efec;
+    --card-border: #e2ded9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131416;
+      --fg: #e4e2e0;
+      --muted: #a9a7a4;
+      --rule: #343537;
+      --accent: #a8c4e4;
+      --card: #1d1e21;
+      --card-border: #2c2d2f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic",
+          "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  h1 { font-size: 1.9rem; line-height: 1.35; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .date { color: var(--muted); font-size: .9rem; margin: 0 0 40px; }
+  h2 {
+    font-size: 1.2rem; margin: 48px 0 12px; padding-top: 24px;
+    border-top: 1px solid var(--rule); letter-spacing: -0.01em;
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  strong { font-weight: 700; }
+  .lede {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 0 0 8px;
+  }
+  .lede p { margin: 0; }
+  .table-scroll { overflow-x: auto; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 420px; font-size: .95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 700; white-space: nowrap; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .9em; background: var(--card); padding: 1px 5px; border-radius: 4px;
+  }
+  footer {
+    margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <h1>Sandcorp 계정 개인정보 수집·이용</h1>
+  <p class="date">게시일 2026년 10월 24일</p>
+
+  <div class="lede">
+    <p>Sandcorp 계정은 <strong>로그인에 필요한 정보만</strong> 받습니다. 카카오 로그인으로 받은
+    회원번호·닉네임·이메일과 약관 동의 기록, 그리고 부정 이용을 막기 위한 접속 기록이 전부입니다.
+    비밀번호는 받지 않고, 광고·분석 도구를 쓰지 않습니다.</p>
+    <p style="margin-top:12px">이 정보는 <strong>이용자가 승인한 Sandcorp 앱에만</strong> 전달되며,
+    그 밖의 누구에게도 팔거나 넘기지 않습니다. 탈퇴하면 바로 이용이 멈추고, 30일 뒤 이메일·이름과
+    로그인 수단 정보를 지웁니다.</p>
+  </div>
+
+  <p>이 문서는 <a href="https://auth.sandcorp.co.kr">Sandcorp 계정</a>(<code>auth.sandcorp.co.kr</code>,
+  이하 「계정 서비스」)이 일반 사용자의 개인정보를 어떻게 모으고 쓰는지 설명합니다. 계정을 쓰는
+  규칙은 <a href="../terms/">Sandcorp 계정 이용약관</a>에 있습니다.</p>
+  <p>운영자: [확인 필요: 사업자 표시 — 개인/법인, 상호·대표자]</p>
+
+  <h2>1. 수집하는 항목</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>항목</th><th>언제</th><th>필수 여부</th></tr></thead>
+    <tbody>
+      <tr><td>카카오 회원번호</td><td>카카오로 로그인할 때</td><td>필수</td></tr>
+      <tr><td>카카오 닉네임(계정의 이름으로 씁니다)</td><td>카카오로 로그인할 때</td><td>필수</td></tr>
+      <tr><td>카카오 계정 이메일과 그 이메일이 인증됐는지 여부</td><td>카카오로 로그인할 때</td><td>필수(카카오 동의 화면에서 묻습니다)</td></tr>
+      <tr><td>약관 동의 기록 — 동의한 문서와 그 버전, 동의한 시각, 만 14세 이상 확인</td><td>가입할 때, 문서가 바뀐 뒤 다시 동의할 때</td><td>필수</td></tr>
+      <tr><td>가입 시각, 로그인 수단을 연결한 시각</td><td>가입·연결할 때</td><td>자동으로 생김</td></tr>
+      <tr><td>접속 IP 주소와 주요 행동 기록(로그인, 동의, 앱 승인 같은 일이 언제 어느 IP에서 있었는지)</td><td>계정 서비스를 쓸 때</td><td>자동으로 생김</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>카카오 프로필 사진, 전화번호, 성별, 생일 같은 다른 정보는 받지 않습니다. 비밀번호도 받지
+  않습니다 — 로그인은 카카오가 확인합니다.</p>
+
+  <h2>2. 어떻게 수집하는지</h2>
+  <p>이용자가 「카카오로 로그인」을 누르고 카카오 화면에서 동의하면, 카카오가 위 항목을 계정
+  서비스에 보내 줍니다. 약관 동의 기록은 이용자가 계정 서비스의 동의 화면에서 직접 체크할 때
+  남습니다. 접속 IP와 행동 기록은 계정 서비스를 쓰는 동안 서버에 자동으로 남습니다.</p>
+  <p>지금은 카카오 로그인만 받습니다. 앞으로 다른 소셜 로그인이 추가될 수 있으며, 그때는 그 수단에서
+  받는 항목을 이 문서에 더하고 다시 동의를 받습니다(<a href="#changes">11번</a>).</p>
+
+  <h2>3. 이용 목적</h2>
+  <ul>
+    <li><strong>로그인과 계정 식별</strong> — 카카오 회원번호로 같은 사람임을 알아보고, 하나의
+    계정으로 여러 Sandcorp 앱에 로그인하게 합니다.</li>
+    <li><strong>연결된 앱에 신원 전달</strong> — 이용자가 승인한 앱에 계정 식별값과 이메일·이름을
+    알려 줍니다(<a href="#provide">5번</a>).</li>
+    <li><strong>같은 이메일 안내</strong> — 다른 로그인 수단으로 이미 가입한 이메일이면 「이전에
+    다른 수단으로 가입하셨습니다」라고 알려 드립니다. 자동으로 합치지는 않습니다.</li>
+    <li><strong>약관 동의 확인</strong> — 현재 문서에 동의했는지, 만 14세 이상인지 확인합니다.</li>
+    <li><strong>부정 이용 방지와 보안</strong> — 짧은 시간에 로그인 실패가 몰리는 IP를 잠시
+    막고, 문제가 생겼을 때 무슨 일이 있었는지 살펴봅니다.</li>
+  </ul>
+  <p>광고, 마케팅, 이용 행태 분석에는 쓰지 않습니다.</p>
+
+  <h2 id="retention">4. 보유 기간</h2>
+  <ul>
+    <li><strong>계정을 쓰는 동안</strong> 위 항목을 보관합니다.</li>
+    <li><strong>탈퇴를 요청하면 즉시</strong> 계정을 멈춥니다. 로그인이 끊기고, 연결된 앱에서도 더는
+    로그인할 수 없으며, 앱에 「이 계정이 탈퇴했다」는 알림을 보냅니다.</li>
+    <li><strong>탈퇴 30일 뒤</strong> 이메일, 이름(닉네임), 카카오 회원번호를 포함한 로그인 수단 정보를
+    지웁니다.</li>
+    <li>다만 <strong>계정 식별값(<code>sub</code>)</strong>은 지우지 않고 남깁니다. 이 값은 가입 시각과
+    난수로 만든 무의미한 문자열이라 그것만으로는 누구인지 알 수 없습니다. 남기는 까닭은 같은 값이
+    다른 사람에게 다시 쓰여, 앱이 새 사람을 옛 사람으로 착각하는 일을 막기 위해서입니다.</li>
+    <li>약관 동의 기록과 접속·행동 기록의 보유 기간: [확인 필요: 동의 기록·감사 기록(IP 포함) 보유
+    기간과 탈퇴 뒤 처리]</li>
+  </ul>
+  <p>법령이 따로 보관을 요구하는 경우에는 그 기간 동안 보관합니다.</p>
+
+  <h2 id="provide">5. 제3자 제공</h2>
+  <p>개인정보를 제3자에게 <strong>제공하지 않습니다.</strong></p>
+  <p>예외는 이용자가 직접 승인한 경우뿐입니다. 어떤 Sandcorp 앱(사이트)에 Sandcorp 계정으로 처음
+  들어가면 「&lt;앱 이름&gt;이 이메일·이름을 봅니다」라는 화면이 나옵니다. 이용자가 승인하면
+  <strong>그 앱에만</strong> 다음이 전달됩니다.</p>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>받는 곳</th><th>전달되는 것</th><th>목적</th><th>보유</th></tr></thead>
+    <tbody>
+      <tr><td>이용자가 승인한 Sandcorp 앱</td><td>계정 식별값(<code>sub</code>), 이메일, 이름</td><td>그 앱의 로그인과 이용자 식별</td><td>각 앱의 개인정보 문서를 따름</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>승인하지 않으면 그 앱에는 아무것도 전달되지 않습니다. 카카오 회원번호와 약관 동의 기록, 접속
+  기록은 앱에 전달하지 않습니다.</p>
+
+  <h2>6. 처리 위탁</h2>
+  <p>「처리 위탁」은 개인정보를 다루는 일의 일부를 다른 회사에 맡기는 것을 말합니다. 계정 서비스는
+  다음을 맡깁니다.</p>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>맡은 곳</th><th>맡긴 일</th></tr></thead>
+    <tbody>
+      <tr><td>Oracle Cloud(OCI)</td><td>계정 서비스 서버와 데이터베이스 운영(클라우드 호스팅). 서버 위치: [확인 필요: OCI 리전(국내/국외)]</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>카카오는 위탁받은 곳이 아니라, 이용자가 고른 로그인 수단으로서 이용자의 동의를 받아 정보를
+  보내 주는 곳입니다. 카카오가 그 정보를 어떻게 다루는지는
+  <a href="https://www.kakao.com/policy/privacy">카카오 개인정보처리방침</a>을 따릅니다.</p>
+
+  <h2>7. 이용자의 권리</h2>
+  <p>이용자는 언제든 자기 정보를 보고, 고치고, 지우게 할 수 있습니다. 계정 서비스의 <strong>「내
+  계정」 화면</strong>에서 다음을 직접 할 수 있습니다.</p>
+  <ul>
+    <li>계정에 저장된 정보 보기</li>
+    <li>이메일 고치기</li>
+    <li>다른 로그인 수단 연결하기, 연결 해제하기(마지막 하나는 해제할 수 없습니다)</li>
+    <li>앱 연결 끊기 — 앱에 준 승인을 거두면 그 앱은 더는 이 계정으로 로그인할 수 없습니다</li>
+    <li>탈퇴하기(<a href="#retention">4번</a>의 보유 기간대로 처리)</li>
+  </ul>
+  <p>화면에서 할 수 없는 요청(처리 정지, 동의 철회 등)은 <a href="#contact">10번</a>의 연락처로
+  보내 주시면 지체 없이 처리하고 결과를 알려 드립니다.</p>
+
+  <h2>8. 만 14세 미만</h2>
+  <p>만 14세 미만은 가입할 수 없습니다. 가입할 때 만 14세 이상임을 확인받으며, 이 확인 없이는
+  가입이 끝나지 않습니다. 만 14세 미만이 가입한 사실을 알게 되면 그 계정을 탈퇴 처리합니다.</p>
+
+  <h2>9. 쿠키와 안전성 확보 조치</h2>
+  <p>「쿠키」는 웹사이트가 브라우저에 남기는 작은 기록입니다. 계정 서비스는 로그인을 유지하고 보안을
+  지키는 데 꼭 필요한 쿠키만 씁니다. 광고·추적 쿠키는 쓰지 않습니다.</p>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>쿠키</th><th>하는 일</th><th>기간</th></tr></thead>
+    <tbody>
+      <tr><td><code>sessionid</code></td><td>계정 서비스에 로그인한 상태를 유지</td><td>로그인한 때부터 7일(쓰는 동안에도 늘어나지 않음)</td></tr>
+      <tr><td><code>csrftoken</code></td><td>다른 사이트가 이용자 몰래 요청을 보내는 공격(CSRF)을 막음</td><td>최대 1년</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>두 쿠키 모두 <code>auth.sandcorp.co.kr</code>에만 쓰이고 HTTPS로만 오갑니다. 브라우저에서 쿠키를
+  막으면 로그인할 수 없습니다.</p>
+  <p>그 밖의 보호 조치: 모든 연결은 HTTPS로 암호화합니다. 앱에 주는 로그인 토큰은 전자 서명해 위조를
+  막고, 오래 쓰는 갱신 토큰은 쓸 때마다 새것으로 바꾸며 서버에는 원래 값이 아닌 해시만
+  저장합니다.</p>
+
+  <h2 id="contact">10. 개인정보 보호책임자와 문의</h2>
+  <p>개인정보 보호책임자: [확인 필요: 개인정보 보호책임자 이름·직책]</p>
+  <p>문의: <a href="mailto:gksdjf1690@gmail.com">gksdjf1690@gmail.com</a></p>
+  <p>개인정보 침해에 관한 상담은 개인정보침해신고센터(국번 없이 118,
+  <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>)에도 할 수 있습니다.</p>
+
+  <h2 id="changes">11. 이 문서가 바뀔 때</h2>
+  <p>내용이 바뀌면 이 문서의 게시일을 고치고 같은 주소에 다시 올립니다. 바뀐 문서가 시행된 뒤
+  처음 로그인할 때 Sandcorp 계정이 다시 동의를 묻고, 동의하기 전에는 로그인을 마칠 수 없습니다.</p>
+
+  <footer>
+    <p><a href="../terms/">Sandcorp 계정 이용약관</a> · <a href="../../">← 문서 목록</a></p>
+  </footer>
+
+</main>
+</body>
+</html>
