@@ -13,6 +13,7 @@ sandcorporation 이 만든 앱들의 개인정보처리방침·이용약관을 G
 | 줄기노트 개인정보처리방침 | https://sandcorporation.github.io/privacy-and-terms/julginote/privacy/ |
 | Sandcorp 계정 이용약관 | https://sandcorporation.github.io/privacy-and-terms/account/terms/ |
 | Sandcorp 계정 개인정보 수집·이용 | https://sandcorporation.github.io/privacy-and-terms/account/privacy/ |
+| promptlab 개인정보 처리방침 | https://sandcorporation.github.io/privacy-and-terms/promptlab/privacy/ |
 
 ## 구조
 
@@ -21,6 +22,7 @@ index.html                    # 문서 목록
 julginote/privacy/index.html  # 줄기노트 개인정보처리방침
 account/terms/index.html      # Sandcorp 계정 이용약관
 account/privacy/index.html    # Sandcorp 계정 개인정보 수집·이용
+promptlab/privacy/index.html  # promptlab 개인정보 처리방침(응시 웹캠 포함)
 ```
 
 앱을 더 내면 `<앱>/privacy/index.html` 을 더한다. 의존성 없는 정적 HTML 이라 빌드가 없다 —
