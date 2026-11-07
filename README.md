@@ -14,6 +14,7 @@ sandcorporation 이 만든 앱들의 개인정보처리방침·이용약관을 G
 | Sandcorp 계정 이용약관 | https://sandcorporation.github.io/privacy-and-terms/account/terms/ |
 | Sandcorp 계정 개인정보 수집·이용 | https://sandcorporation.github.io/privacy-and-terms/account/privacy/ |
 | promptlab 개인정보 처리방침 | https://sandcorporation.github.io/privacy-and-terms/promptlab/privacy/ |
+| promptlab 이용약관(고객사용) | https://sandcorporation.github.io/privacy-and-terms/promptlab/terms/ |
 | Sandcorp 서비스 오류 기록(공통) | https://sandcorporation.github.io/privacy-and-terms/errors/ |
 
 ## 구조
@@ -24,6 +25,7 @@ julginote/privacy/index.html  # 줄기노트 개인정보처리방침
 account/terms/index.html      # Sandcorp 계정 이용약관
 account/privacy/index.html    # Sandcorp 계정 개인정보 수집·이용
 promptlab/privacy/index.html  # promptlab 개인정보 처리방침(응시 웹캠 포함)
+promptlab/terms/index.html    # promptlab 이용약관(B2B 고객사 — 처리 위탁·재위탁 동의)
 errors/index.html             # 모든 Sandcorp 서비스 공통 — 오류 기록(GlitchTip) 수집
 ```
 
