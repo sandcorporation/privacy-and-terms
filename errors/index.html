@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sandcorp 서비스 오류 기록</title>
+<meta name="description" content="Sandcorp 서비스들이 오류가 났을 때 자동으로 남기는 오류 기록 — 담기는 것, 지우는 것, 목적, 보관 기간.">
+<style>
+  :root {
+    --bg: #fbfaf9;
+    --fg: #1b1c1e;
+    --muted: #5a5a5c;
+    --rule: #dedbd7;
+    --accent: #3d5a80;
+    --card: #f2efec;
+    --card-border: #e2ded9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131416;
+      --fg: #e4e2e0;
+      --muted: #a9a7a4;
+      --rule: #343537;
+      --accent: #a8c4e4;
+      --card: #1d1e21;
+      --card-border: #2c2d2f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic",
+          "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  h1 { font-size: 1.9rem; line-height: 1.35; margin: 0 0 8px; letter-spacing: -0.02em; }
+  .date { color: var(--muted); font-size: .9rem; margin: 0 0 40px; }
+  h2 {
+    font-size: 1.2rem; margin: 48px 0 12px; padding-top: 24px;
+    border-top: 1px solid var(--rule); letter-spacing: -0.01em;
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  strong { font-weight: 700; }
+  .lede {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 0 0 8px;
+  }
+  .lede p { margin: 0; }
+  .table-scroll { overflow-x: auto; margin: 16px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 420px; font-size: .95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 700; white-space: nowrap; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .9em; background: var(--card); padding: 1px 5px; border-radius: 4px;
+  }
+  footer {
+    margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <h1>Sandcorp 서비스 오류 기록</h1>
+  <p class="date">게시일 2026년 11월 7일 · 시행일 2026년 11월 7일</p>
+  <div class="lede">
+    <p>Sandcorp 서비스에 오류가 나면 무엇이 잘못됐는지 알 수 있도록 <strong>오류 기록</strong>이 자동으로
+    생깁니다. 이 기록은 Sandcorp가 <strong>직접 운영하는 오류 수집 서버</strong>(오픈 소스 GlitchTip을 Sandcorp
+    서버에 설치해 운영)에만 모이고, 다른 회사에 맡기거나 넘기지 않습니다.</p>
+    <p style="margin-top:12px">쿠키, 로그인 토큰, 비밀번호, 입력한 내용(요청 본문)은 보내기 전에 지우고,
+    이메일·이름을 일부러 담지 않습니다. 오류 기록은 <strong>90일</strong> 뒤 자동으로 지웁니다.</p>
+  </div>
+
+  <p>이 문서는 아래 Sandcorp 서비스에 공통으로 적용되며, 각 서비스의 개인정보 문서가 「서비스 이용 과정에서
+  자동으로 생성·수집되는 정보」로 이 문서를 가리킵니다.</p>
+  <p>운영자: 개인사업자 <strong>샌드코프(Sandcorp)</strong> · 대표 김한얼 · 사업자등록번호 752-26-01740 · 문의 <a href="mailto:gksdjf1690@gmail.com">gksdjf1690@gmail.com</a></p>
+
+  <h2 id="services">1. 적용하는 서비스</h2>
+  <ul>
+    <li>Sandcorp 계정(<code>auth.sandcorp.co.kr</code>)</li>
+    <li>Sandcorp 홈페이지(<code>sandcorp.co.kr</code>)</li>
+    <li>promptlab(<code>promptlab.sandcorp.co.kr</code>)</li>
+    <li>flow, daypage, foresight(뉴스), codemit</li>
+  </ul>
+  <p>각 서비스는 2026년 11월 7일부터 오류 기록을 보냅니다.</p>
+
+  <h2 id="items">2. 오류 기록에 담기는 것</h2>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>항목</th><th>설명</th></tr></thead>
+    <tbody>
+      <tr><td>오류 내용과 발생 위치</td><td>오류 메시지와, 오류가 난 프로그램 코드의 위치</td></tr>
+      <tr><td>발생 시각</td><td>오류가 난 시각</td></tr>
+      <tr><td>서비스 버전</td><td>오류가 난 서비스 프로그램의 판</td></tr>
+      <tr><td>페이지 주소(URL)</td><td>오류가 났을 때 보고 있던 페이지의 주소</td></tr>
+      <tr><td>브라우저·기기 정보(User-Agent)</td><td>브라우저 종류와 판, 운영체제 같은 정보</td></tr>
+      <tr><td>요청 경로와 방식(서버 오류일 때)</td><td>서버가 처리하던 요청의 경로와 방식(GET·POST 같은 것)</td></tr>
+      <tr><td>접속 IP 주소(일부를 가려 저장)</td><td>오류를 받은 오류 수집 서버가 보낸 쪽의 IP 주소를 붙입니다. 저장하기 전에 IPv4는 마지막 자리(끝 8비트)를, IPv6는 뒤쪽 64비트를 0으로 바꿔 가리므로 정확한 주소는 남지 않습니다.</td></tr>
+      <tr><td>회원 식별 번호(codemit만)</td><td>codemit에 로그인한 회원이 쓰다가 오류가 나면, codemit이 회원에게 매긴 내부 번호를 붙입니다. 이름·이메일은 붙이지 않습니다. 다른 서비스는 회원 번호를 붙이지 않습니다.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="removed">3. 지우고 보내는 것, 담지 않는 것</h2>
+  <p>다음은 오류 기록을 보내기 전에 지웁니다.</p>
+  <ul>
+    <li>쿠키</li>
+    <li>인증 헤더와 로그인 토큰</li>
+    <li>비밀번호</li>
+    <li>요청 본문(이용자가 입력해 보낸 내용)</li>
+    <li>오류가 난 순간 프로그램이 들고 있던 값(지역 변수)</li>
+  </ul>
+  <p>이메일 주소나 이름 같은 이용자 정보는 오류 기록에 <strong>일부러 담지 않습니다</strong>(오류 수집 도구의
+  「개인정보 자동 첨부」 기능을 꺼 두었습니다). 다만 페이지 주소나 오류 메시지에 이용자가 입력한 값이
+  섞여 들어갈 수는 있으며, 그런 경우에도 아래 목적 밖으로 쓰지 않고 보관 기간이 지나면 지웁니다.</p>
+
+  <h2 id="purpose">4. 이용 목적</h2>
+  <p>서비스 오류를 발견하고 고치며, 서비스를 안정적으로 운영하기 위해서만 씁니다. 광고, 마케팅, 이용
+  행태 분석에는 쓰지 않습니다.</p>
+
+  <h2 id="retention">5. 보관 기간</h2>
+  <p>오류 기록은 수집한 날부터 <strong>90일</strong>이 지나면 오류 수집 서버가 자동으로 지웁니다.</p>
+
+  <h2 id="entrust">6. 처리 위탁과 제3자 제공</h2>
+  <p>오류 수집 서버는 Sandcorp가 직접 설치해 운영하며, 오류 기록을 처리하는 일을 다른 회사에
+  <strong>맡기지 않고</strong>, 제3자에게 <strong>제공하지 않습니다.</strong> 오류 수집 서버는 대한민국 안에 있어 오류 기록을 국외로 옮기지 않습니다.</p>
+
+  <h2 id="rights">7. 이용자의 권리와 문의</h2>
+  <p>오류 기록에 대한 열람·삭제 같은 요청과 문의는 <a href="mailto:gksdjf1690@gmail.com">gksdjf1690@gmail.com</a>으로
+  보내 주시면 지체 없이 처리합니다. 개인정보 보호책임자는 대표 김한얼입니다. 개인정보 침해에 관한 상담은
+  개인정보침해신고센터(국번 없이 118, <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>)에도 할 수
+  있습니다.</p>
+
+  <h2 id="changes">8. 이 문서가 바뀔 때</h2>
+  <p>내용이 바뀌면 이 문서의 게시일을 고치고 같은 주소에 다시 올립니다.</p>
+  <h3 style="font-size:1rem;margin:24px 0 4px">바뀐 내역</h3>
+  <ul>
+    <li><strong>2026년 11월 7일 보완</strong> — 담기는 것에 접속 IP 주소(일부를 가려 저장)와 회원 식별 번호(codemit만)를 더했습니다.</li>
+    <li><strong>2026년 11월 7일 게시·시행</strong> — 처음 게시.</li>
+  </ul>
+
+  <footer>
+    <p><a href="../account/privacy/">Sandcorp 계정 개인정보 수집·이용</a> · <a href="../promptlab/privacy/">promptlab 개인정보 처리방침</a> · <a href="../">← 문서 목록</a></p>
+  </footer>
+
+</main>
+</body>
+</html>
