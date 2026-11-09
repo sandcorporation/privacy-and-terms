@@ -1,0 +1,22 @@
+name: PR 검사
+
+# 공개 저장소: 남의 PR 코드가 우리 서버·비밀값에 닿지 않게
+# pull_request(포크는 읽기 전용 토큰) + GitHub 호스팅 실행기 + secrets 미사용.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: HTML 태그 짝·상대 링크·앵커 검사
+        run: python3 .github/scripts/check_docs.py
